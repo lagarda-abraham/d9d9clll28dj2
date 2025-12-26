@@ -1,14 +1,11 @@
 const output = document.getElementById("output");
 
-// Obtiene la ruta después del dominio
-// ejemplo: /api-usuarios/usuario/juan
 const path = window.location.pathname.split("/");
 
-// Busca "usuario" y el nombre
 const usuarioIndex = path.indexOf("usuario");
 const username = usuarioIndex !== -1 ? path[usuarioIndex + 1] : null;
 
-fetch("usuarios.json")
+fetch("/d9d9clll28dj2/usuarios.json")
   .then(res => res.json())
   .then(data => {
     if (!username) {
@@ -35,7 +32,7 @@ fetch("usuarios.json")
 
     output.textContent = JSON.stringify(usuario, null, 2);
   })
-  .catch(err => {
+  .catch(() => {
     output.textContent = JSON.stringify(
       { error: "Error cargando datos" },
       null,
