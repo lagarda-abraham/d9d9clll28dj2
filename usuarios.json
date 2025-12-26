@@ -1,0 +1,25 @@
+{
+  "usuarios": [
+    {
+      "username": "juan",
+      "nombre": "Juan Perez",
+      "edad": 19,
+      "pais": "México",
+      "rol": "admin"
+    },
+    {
+      "username": "ana",
+      "nombre": "Ana López",
+      "edad": 22,
+      "pais": "Argentina",
+      "rol": "user"
+    },
+    {
+      "username": "carlos",
+      "nombre": "Carlos Gómez",
+      "edad": 17,
+      "pais": "Chile",
+      "rol": "moderator"
+    }
+  ]
+}
